@@ -12,7 +12,6 @@ public class Algoritmos {
         abstract String nome();
 
         /**
-         * A pergunta do milhão: a mesa está cheia, QUEM levanta?
          * Devolve a POSIÇÃO (o número do lugar) da página que será retirada.
          *
          * @param memoria a mesa
@@ -128,7 +127,7 @@ public class Algoritmos {
     //      Classe 2:  R=1 e M=0  -> usada recentemente, mas limpa
     //      Classe 3:  R=1 e M=1  -> usada recentemente e suja          (pior para tirar)
     //
-    // Por quê nessa ordem? Página usada há pouco provavelmente vai ser usada de novo; página
+    // Página usada há pouco provavelmente vai ser usada de novo; página
     // suja custa gravar no disco. As duas coisas são ruins de tirar.
     //
     // Regra: procure a MENOR classe que tenha alguém e tire dela. Se tem várias pessoas na
